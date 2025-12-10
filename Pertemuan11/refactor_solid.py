@@ -91,8 +91,6 @@ qris_processor = QrisProcessor()
 
 # Inject implementasi QRIS yang baru dibuat
 checkout_qris = CheckoutService(payment_processor=qris_processor, notifier=email_service)
+
 print('\n--- Skenario 2: Pembuktian OCP (WRIS) ---')
 checkout_qris.run_checkout(budi_order)
-
-
-
