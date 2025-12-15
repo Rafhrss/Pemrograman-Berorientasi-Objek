@@ -12,8 +12,8 @@ Proyek ini mendemonstrasikan implementasi prinsip SOLID (SRP, OCP, DIP) pada sis
 1. Pastikan Python 3.x terinstal.
 2. Jalankan file utama dari terminal:
     ```bash
-    python refactor_solid.py```
+    python refactor_solid.py
 
 
 ### Histori Perubahan (Log)
-Kode dikelola menggunakan Git. Lihat [link ke GitHub Commit History Anda].
+Kode dikelola menggunakan Git. Lihat di link berikut: https://github.com/Rafhrss/Pemrograman-Berorientasi-Objek/commits/main/Pertemuan12
