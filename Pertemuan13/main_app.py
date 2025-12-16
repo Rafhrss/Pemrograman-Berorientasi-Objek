@@ -1,6 +1,6 @@
 import logging
 from repositories import ProductRepository
-from services import IPaymentProcessor, ShoppingCart, CashPayment
+from services import IPaymentProcessor, ShoppingCart, CashPayment, DebitCardPayment
 from models import Product # Diperlukan untuk type hint di _handle_add_item
 
 LOGGER = logging.getLogger('MAIN_APP')
@@ -71,7 +71,10 @@ if __name__ == "__main__":
     repo = ProductRepository()
 
     # 2. Instantiate Service (Implementasi Konkret)
-    payment_method = CashPayment()
+    # payment_method = CashPayment()
+
+    # Menggunakan DebitCardPayment sebagai metode pembayaran, perintah dari Latihan Mandiri
+    payment_method = DebitCardPayment()
 
     # 3. Inject Dependencies ke Aplikasi Utama
     app = PosApp(repository=repo, payment_processor=payment_method)
